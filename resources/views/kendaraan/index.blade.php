@@ -13,7 +13,7 @@
 
     <div class="table-container shadow-sm">
         <table class="table table-hover mb-0">
-            <thead style="background-color: #afece7;">
+            <thead style="background-color: #2c7670;">
                 <tr>
                     <th>ID</th>
                     <th>Plat Nomor</th>

@@ -35,20 +35,9 @@ class KendaraanController extends Controller
         return redirect()->route('kendaraan.index')->with('success', 'Data berhasil ditambahkan');
     }
 
-    public function edit($id)
-    {
-        $kendaraan = Kendaraan::findOrFail($id);
-        return view('kendaraan.edit', compact('kendaraan'));
-    }
+   
 
-    public function update(Request $request, $id)
-    {
-        $kendaraan = Kendaraan::findOrFail($id);
-
-        $kendaraan->update($request->all());
-
-        return redirect()->route('kendaraan.index')->with('success', 'Data berhasil diupdate');
-    }
+   
 
     public function destroy($id)
     {
