@@ -35,14 +35,5 @@ class KendaraanController extends Controller
         return redirect()->route('kendaraan.index')->with('success', 'Data berhasil ditambahkan');
     }
 
-   
 
-   
-
-    public function destroy($id)
-    {
-        Kendaraan::findOrFail($id)->delete();
-
-        return redirect()->route('kendaraan.index')->with('success', 'Data berhasil dihapus');
-    }
 }
